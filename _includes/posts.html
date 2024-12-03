@@ -1,4 +1,4 @@
-{% assign posts = site.posts | where: "lang", page.lang %}
+{% assign posts = site.posts | where: "lang", page.lang | slice: 0, 2 %}
 
 <div class="container my-4">
   <div class="row">
